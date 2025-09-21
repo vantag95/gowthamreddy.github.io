@@ -1,4 +1,4 @@
-# Hi, I'm Sunny 👋
+# Hi, I'm Gowtham 👋
 Master's in Data Science | Fresher | Aspiring Data Scientist
 
 Welcome to my portfolio!  
