@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Gowtham Reddy Vanta</title>
   <style>
+    .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
     /* Reset */
     body { margin: 0; font-family: 'Arial', sans-serif; background: #f4f4f9; color: #333; }
 
@@ -102,24 +125,26 @@
 
   <!-- About -->
   <section id="about" class="about">
-  <img src="profile.jpg" alt="Gowtham Reddy Vanta" class="profile-pic">
-  <h2>About Me</h2>
-  <p>
-    Hi, I’m <strong>Gowtham Reddy Vanta</strong>, a recent Master’s graduate in <strong>Data Science</strong> 
-    with strong interests in <strong>Data Engineering, Big Data, and Machine Learning</strong>. 
-    During my master’s, I worked on projects involving <strong>Neo4j-based recommendation systems, 
-    IoT-driven telematics, deep learning, and data mining</strong>, which gave me hands-on experience 
-    in handling real-world datasets and solving data-driven problems.  
-  </p>
-  <p>
-    I am skilled in <strong>Python, SQL, MongoDB, Neo4j, and I enjoy building 
-    clean efficient data pipelines and transforming raw data into meaningful insights.  
-  </p>
-  <p>
-    As a fresher, I am eager to apply my skills, learn from experienced professionals, and contribute 
-    to impactful <strong>Data Engineering or Data Science projects</strong> that make a difference. 🚀
-  </p>
+  <div class="about-container">
+    <img src="profile.jpg" alt="Gowtham Reddy Vanta" class="profile-pic">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <strong>Gowtham Reddy Vanta</strong>, a recent Master’s graduate in 
+        <strong>Data Science</strong> with strong interests in 
+        <strong>Data Engineering, Big Data, and Machine Learning</strong>.  
+        As a fresher, I’ve built hands-on projects in <strong>Neo4j, MongoDB, IoT, 
+        Deep Learning, and Recommendation Systems</strong> during my Master’s program.  
+
+        I enjoy transforming raw data into <strong>actionable insights</strong> and 
+        creating scalable solutions. My career goal is to contribute as a 
+        <strong>Data Engineer / Data Scientist</strong>, helping organizations 
+        make smarter, data-driven decisions. 🚀
+      </p>
+    </div>
+  </div>
 </section>
+
 
   <!-- Projects -->
   <section id="projects" class="projects">
