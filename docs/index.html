@@ -5,134 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Gowtham Reddy Vanta</title>
   <style>
-    /* Global Styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #0f172a;
-      color: #f1f5f9;
-      line-height: 1.6;
-    }
+    /* Reset */
+    body { margin: 0; font-family: 'Arial', sans-serif; background: #f4f4f9; color: #333; }
 
-    a {
-      text-decoration: none;
-      color: #38bdf8;
-      transition: 0.3s;
-    }
-
-    a:hover {
-      color: #facc15;
-    }
-
+    /* Header */
     header {
-      background: linear-gradient(90deg, #1e293b, #334155);
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #38bdf8;
-    }
-
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.2rem;
-      color: #e2e8f0;
-    }
-
-    nav {
-      margin-top: 20px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      font-weight: bold;
-      color: #f8fafc;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    section {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
       padding: 50px 20px;
-      max-width: 900px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8rem; margin: 10px 0; }
+    header p { font-size: 1.2rem; margin-bottom: 20px; }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffcc00; }
+
+    /* Sections */
+    section { padding: 60px 20px; text-align: center; }
+
+    /* About Section */
+    .about {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+    }
+    .about h2 { font-size: 2.2rem; margin-bottom: 20px; }
+    .about p { max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.7; }
+    .profile-pic {
+      width: 150px; height: 150px; border-radius: 50%;
+      margin-bottom: 20px; border: 4px solid white; object-fit: cover;
+    }
+    .skills { margin-top: 30px; }
+    .skills h3 { font-size: 1.5rem; margin-bottom: 10px; }
+    .skills ul { list-style: none; padding: 0; font-size: 1.1rem; }
+    .skills li { margin: 6px 0; }
+
+    /* Projects Section */
+    .projects h2 { font-size: 2rem; margin-bottom: 30px; }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
       margin: auto;
     }
-
-    h2 {
-      color: #facc15;
-      border-bottom: 2px solid #38bdf8;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 30px;
-      background: #1e293b;
+    .project {
+      background: white;
+      border-radius: 10px;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0px 3px 6px rgba(0,0,0,0.4);
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    li b {
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+    .project a {
+      text-decoration: none;
+      color: #2a5298;
+      font-weight: bold;
       font-size: 1.2rem;
-      color: #38bdf8;
     }
+    .project p { font-size: 0.95rem; margin-top: 10px; line-height: 1.6; }
 
-    /* About Section Card */
-    .about-card {
-      background: #fff;
-      color: #000;
-      padding: 20px;
-      border-radius: 12px;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      text-align: center;
-    }
+    /* Contact Section */
+    .contact { background: #f9f9f9; }
+    .contact h2 { font-size: 2rem; margin-bottom: 20px; }
+    .contact p { font-size: 1.1rem; margin: 10px 0; }
+    .contact a { color: #2a5298; text-decoration: none; font-weight: bold; }
+    .contact a:hover { text-decoration: underline; }
 
-    .about-card img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 4px solid #38bdf8;
-      object-fit: cover;
-    }
-
+    /* Footer */
     footer {
-      background: #1e293b;
-      color: #94a3b8;
-      text-align: center;
-      padding: 20px;
+      background: #222; color: white; text-align: center; padding: 15px;
       font-size: 0.9rem;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #38bdf8;
-    }
-
-    footer a:hover {
-      color: #facc15;
     }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <h1>Gowtham Reddy Vanta</h1>
-    <p>Master’s in Data Science | Aspiring Data Scientist</p>
+    <p>Master’s in Data Science | Aspiring Data Engineer</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -140,57 +100,54 @@
     </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-card">
-      <!-- Replace "my-photo.jpg" with your actual image filename -->
-      <img src="my-photo.jpg" alt="Gowtham Reddy Vanta">
-      <p>
-        Hi, I’m <b>Gowtham Reddy Vanta</b>, a Master’s graduate in Data Science with hands-on 
-        experience in machine learning, deep learning, database systems, and data-driven 
-        application development.  
-        <br><br>
-        I’ve worked on projects in graph databases (Neo4j), recommendation systems, data mining, and deep learning — showcasing my ability to solve 
-        real-world problems with data.  
-        <br><br>
-        My goal is to contribute as a <b>Data Scientist / Machine Learning Engineer</b>, 
-        helping organizations make informed decisions and create innovative AI-powered 
-        solutions. 🚀
-      </p>
+  <!-- About -->
+  <section id="about" class="about">
+  <img src="profile.jpg" alt="Gowtham Reddy Vanta" class="profile-pic">
+  <h2>About Me</h2>
+  <p>
+    Hi, I’m <strong>Gowtham Reddy Vanta</strong>, a recent Master’s graduate in <strong>Data Science</strong> 
+    with strong interests in <strong>Data Engineering, Big Data, and Machine Learning</strong>. 
+    During my master’s, I worked on projects involving <strong>Neo4j-based recommendation systems, 
+    IoT-driven telematics, deep learning, and data mining</strong>, which gave me hands-on experience 
+    in handling real-world datasets and solving data-driven problems.  
+  </p>
+  <p>
+    I am skilled in <strong>Python, SQL, MongoDB, Neo4j, and I enjoy building 
+    clean efficient data pipelines and transforming raw data into meaningful insights.  
+  </p>
+  <p>
+    As a fresher, I am eager to apply my skills, learn from experienced professionals, and contribute 
+    to impactful <strong>Data Engineering or Data Science projects</strong> that make a difference. 🚀
+  </p>
+</section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <a href="https://github.com/vantag95/travel-recommendation-system" target="_blank">
+          Travel Recommendation System (Neo4j)
+        </a>
+        <p>
+          Designed to provide personalized travel suggestions to users based on preferences, past visits, and social connections.  
+          Leveraged graph-based relationships to deliver tailored recommendations.
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/vantag95/Dog-Breed-Classification-DataMining" target="_blank">
+          Dog Breed Classification (Deep Learning)
+        </a>
+        <p>
+          Built a comprehensive dog breed classifier using the Stanford Dogs Dataset.  
+          Implemented preprocessing, clustering, association rule mining, and deep learning (CNNs, transfer learning).
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <b><a href="https://github.com/vantag95/travel-recommendation-system" target="_blank">
-          Travel Recommendation System (Neo4j)
-        </a></b>
-        <p>
-          Built a graph-based recommendation engine that provides personalized 
-          travel suggestions based on user preferences, past visits, and social 
-          connections.
-        </p>
-      </li>
-
-      <li>
-        <b><a href="https://github.com/vantag95/Dog-Breed-Classification-DataMining" target="_blank">
-          Dog Breed Classification (Deep Learning)
-        </a></b>
-        <p>
-          Developed a classification system using CNNs and transfer learning on the 
-          Stanford Dogs dataset. Included clustering, association rule mining, and 
-          NLP-based metadata analysis for deeper insights.
-        </p>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
+  <!-- Contact -->
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:vantagowthamreddy@gmail.com">vantagowthamreddy@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/vantag95" target="_blank">github.com/vantag95</a></p>
@@ -199,8 +156,9 @@
     </a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Gowtham Reddy Vanta | Built with ❤️ and Data</p>
+    <p>© 2025 Gowtham Reddy Vanta. All rights reserved.</p>
   </footer>
 </body>
 </html>
