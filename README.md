@@ -1,1 +1,1 @@
-# gowthamreddy.github.io
+# Hi, I’m Gowtham Reddy Vanta, a recent Master’s graduate in Data Science with strong interests in Data Engineering, Big Data, and Machine Learning. As a fresher, I’ve built hands-on projects in Neo4j, MongoDB, IoT, Deep Learning, and Recommendation Systems during my Master’s program. I enjoy transforming raw data into actionable insights and creating scalable solutions. My career goal is to contribute as a Data Engineer / Data Scientist, helping organizations make smarter, data-driven decisions. 🚀
